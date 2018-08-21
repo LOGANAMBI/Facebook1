@@ -8,7 +8,7 @@ public class SignUp {
 	static String female;
 	private static WebDriver driver = null;
 	public static void main(String[] args) throws Exception  {
-		System.setProperty("webdriver.gecko.driver", "C:\\Users\\Balaji\\Downloads\\geckodriver-v0.21.0-win32\\geckodriver.exe");
+		System.setProperty(null, null);
 	    WebDriver driver = new FirefoxDriver();
 		driver.get(null);
 		FaceBook.Firstname(driver).click();
