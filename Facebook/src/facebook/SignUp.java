@@ -10,15 +10,15 @@ public class SignUp {
 	public static void main(String[] args) throws Exception  {
 		System.setProperty("webdriver.gecko.driver", "C:\\Users\\Balaji\\Downloads\\geckodriver-v0.21.0-win32\\geckodriver.exe");
 	    WebDriver driver = new FirefoxDriver();
-		driver.get("https://www.facebook.com/");
+		driver.get(null);
 		FaceBook.Firstname(driver).click();
-		FaceBook.Firstname(driver).sendKeys("logi");
+		FaceBook.Firstname(driver).sendKeys(args);
 		FaceBook.Lastname(driver).click();
-		FaceBook.Lastname(driver).sendKeys("nambi");
+		FaceBook.Lastname(driver).sendKeys(args);
 		FaceBook.MobileEmail(driver).click();
-		FaceBook.MobileEmail(driver).sendKeys("1223456790");
+		FaceBook.MobileEmail(driver).sendKeys(args);
 		FaceBook.Pwd(driver).click();
-		FaceBook.Pwd(driver).sendKeys("himahowru");
+		FaceBook.Pwd(driver).sendKeys(args);
 		DropDown.Dropdown(driver);
         FaceBook.Female(driver).click();
         //FaceBook.Male(driver).click();
