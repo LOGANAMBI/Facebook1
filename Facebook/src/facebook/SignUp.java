@@ -3,9 +3,6 @@ import org.openqa.selenium.WebDriver;
 import capturescreenshot.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 public class SignUp {
-	static String gender;
-	static String male;
-	static String female;
 	private static WebDriver driver = null;
 	public static void main(String[] args) throws Exception  {
 		System.setProperty(null, null);
